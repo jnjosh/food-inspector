@@ -322,14 +322,14 @@ tr.violation-detail td {
     text-align: center;
     margin-top: 15px;
   }
+
 }
-
-
 
 .main-map {
   height: 300px;
   margin-bottom: 10px;
 }
+
 @media screen and (max-width: 768px) {
     .main-map {
         height: 150px;
@@ -346,3 +346,25 @@ tr.violation-detail td {
   padding-right: 13px;
 
 }
+
+/* Content Desktop controls what is visible based on typical 
+   content size of iPad portrait, otherwise the content is 
+   hidden
+   */
+
+   @media screen and (min-width: 768px) {
+ 
+    .content-desktop {
+      display: block;
+    }
+  
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+   
+    .content-desktop {
+      display: none;
+    }
+    
+  }
+  
